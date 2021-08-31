@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr Coffee's About Page</title>
+  <script src="contact_formhandler.js" defer></script>
+  <link rel="stylesheet" href="/application.css">
+</head>
+<!-- <body class = "flex column space-between"> -->
+  <body>
+
+  <div class="hidden overlay"></div>
+  <!-- Modal window -->
+  <div class = "hidden modal">
+    <!-- Modal logo -->
+    <div>
+      <img src="/assets/logo_mrcoffee.png" 
+          alt= "Mr Coffee's logo with a flat, black, man wearing a black hat on top.">  
+    </div>
+    <!-- Modal content -->
+    <div>      
+      <h2>MERCI</h2>
+      <p><strong>Votre message a bien été envoyé !</strong></p><br>
+      <p>Nous essaierons d’y répondre au mieux dans les plus brefs <br>délais. À bientot chez Mr.Coffee</p>
+      <div>    
+        <button id="closemodal" type="submit">FERMER</button>
+      </div>    
+    </div>
+  </div> 
+  
+  <header>
+    <div class = "nav-items flex space-between">
+      <img class = "header-logo" src = "assets/full_logo_white.png" 
+      alt="Mr Coffee's logo, a flat, black, man wearing a hat on top.">
+      <nav>
+        <p><a href = "/">Accueil</a></p>
+        <p><a href = "/about.html">Qui&nbsp;sommes&#8209;nous</a></p>
+        <p><a href = "/contact.html">Nous&nbsp;contracter</a></p>
+      </nav>
+    </div>
+      <div>              
+      <img class = "main-header-logo flex" src="/assets/logo_mrcoffee.png" 
+      alt= "Mr Coffee's logo with a flat, black, man wearing a black hat on top.">
+    </div>    
+  </header>
+  <main>
+    <div class="form column"> 
+      <h1>Dites nous tout !</h1>
+     <!-- Form Data -->
+      <form id="formdata">        
+          <label for="fname">Prénom: *</label>
+          <input class="inputs" type="name" id="fname" name="firstname"
+           required size=45>
+      
+          <label for="lname">Nom de famille: *</label>
+          <input class="inputs" type="name" id="lname" name="lastname" 
+           required size=45>
+      
+          <label for="phone">Téléphone:</label>
+          <input class="inputs" type="tel" id="phone" name="phone" 
+           size=45>
+
+          <label for="email">Adresse mail: *</label>
+          <input class="inputs" type="email" id="email" name="email" 
+           required size=45>
+
+          <label for="message">un message: *</label>
+          <textarea class="inputs" id="message" name="message" rows="5" 
+           placeholder="tapez votre message ici" required ></textarea>       
+        <div>    
+          <button id="submitform" type="submit">nous faire parvenir</button>
+        </div>      
+      </form>    
+  </div>
+  <!-- Contact Details -->
+    <div class = "contact flex column">
+      <h1>On vous attend !</h1>      
+    
+      <div class = "details1">
+        <p><strong>Mr.Coffee</strong></p>
+        <p>15 place Jules Guesde</p>
+        <p>75006 Paris</p>
+      </div>
+      <div class = "details2">
+        <p>Tel : +33 9 46 25 78 45</p>
+        <p>Mail: contact@mr-coffee.com</p>
+      </div>
+      <img src="/assets/Mr_coffee_map.PNG" alt = "Map of Mr Coffee's location">
+      </div>
+
+  </main>
+  <!-- footer data with logo and social media links -->
+  <footer class = "footer flex">
+    <img class="footer-logo" src="/assets/logo_blanc.png" alt="Mr Coffee logo, a flat, white, man wearing a hat on top" />
+    <div class = "find-us flex">
+      <p>Suivez nous sur les réseaux sociaux&nbsp;!</p>
+      <!-- class for social media links and logos when clicked on links gets opened in a new window due to the target -->
+        <div class="socials">
+        <a href="https://www.linkedin.com/" target="_blank"> 
+          <img src="/assets/logo_linkedin.png" alt="LinkedIn white logo"/></a>
+        <a href="https://www.twitter.com/" target="_blank">
+          <img src="/assets/logo_twitter.png" alt="Twitter white logo"/></a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="/assets/logo_facebook.png" alt="Facebook white logo"/></a>
+       </div>
+    </div>
+  </footer>
+</body>
+</html>

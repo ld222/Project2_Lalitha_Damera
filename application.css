@@ -1,0 +1,514 @@
+/*--import the Open Sans goofle font for different languages--*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* VARIABLES ---------------------- */
+/* Good practice to declare global variables so that we can reuse throughout the code*/
+:root {
+  --primary-color: #6a7b8b; /*--background color for header and footer--*/
+  --secondary-color: #bbc1c8; /*--secondary background color for the main section--*/
+  --background-color: #f5f5f5; /*--primary background color--*/
+  --text-color: #5c5b5b; /*--grey text--*/
+  --white: #ffffff; /*--white text--*/
+  --font: 'Open Sans', sans-serif; /*--by default the text size is 16--*/
+}
+/* --remove the margin and padding for every element in the page before and after-- */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    /*--Specifying box size retain the element size but any changes in padding would effect the contents--*/
+    box-sizing: border-box; 
+    /* border: orangered solid; */
+  }
+
+
+  /* General layout and global properties */  
+ a{ 
+    text-decoration: none;
+    color: var(--white);
+  }
+  a:hover{
+      text-decoration-line:underline; 
+  }
+  
+  body {    
+    width: 100vw;
+    min-height: 100vh;
+    background-color:var(--background-color);
+  }
+
+  main {    
+    /* max-width: 1080px; */
+    margin: 0 auto;
+    flex-grow: 1;
+    padding: 5px;
+    align-content: center;
+    background-color:var(--background-color);
+    
+  }
+  p{
+      color:var(--text-color);
+      text-align: center;
+      font-weight: 400;
+      font-family: var(--font);
+  }
+
+  /* flex properties */
+ .flex{
+    display: flex;
+ }
+
+.flex.space-between{
+    justify-content: space-between;
+}
+.flex.column{
+    flex-direction: column;
+}
+.flex.row{
+    flex-direction: row;
+}
+
+/* header and footer common properties */
+.nav-items, footer{
+    background: var(--primary-color);
+    padding: .5rem 2.5rem;   /*spacing around the content*/
+    align-items: center; 
+    height:7rem;
+    width: 100%;    
+  }
+/* Header */
+.header-logo{
+    width: 10rem;    
+}
+.nav-items p{ /* avoid overlapping */
+    display: inline; 
+    margin-left: 2rem;  
+    font-weight: 700; 
+}
+.main-header-logo{
+    width: 15rem;
+    padding: 1rem 2rem;
+    align-items: center;
+    margin: 0 auto;   
+}
+/* Main Page */
+.main-image img{
+    width: 100%;
+    margin-bottom: 2rem;
+} 
+.main-image{
+    position: relative;
+}
+.main-image h1{
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    color: var(--white);
+    text-align: center;
+    transform: translateY(-50%);
+    padding: .5rem;     
+}  
+h2{
+    color:var(--text-color);
+    text-align: center;  
+    justify-content: center;
+    font-weight: 700;
+    line-height: 200%;
+    padding: 10px;
+    margin-bottom: 30px;
+}  
+
+/* Contents of the main page*/
+.likes{
+    width: 100%;
+    color: var(--white);
+    text-align:center;
+    align-items: center;
+    padding: 2px;   
+}
+
+.likes-list {   
+    background-color:var(--secondary-color);
+    width: 30%;
+    height: 80%;
+    text-align: center;
+    padding: 5px;
+    
+}
+.likes-list p{
+    color:var(--white);
+}
+.likes-list img {
+    width: 30%;
+    text-align: center;
+    padding: 5px;    
+    margin-bottom: 5px;
+}    
+.likes-list h3{
+    margin-bottom: 5px;
+}
+  
+/* Button properties of the main page*/
+   #more{width:100%; height:300px;}
+    button{height:50px; position:relative; margin: 30px 1px -1px -70px; width:150px; top:50%;
+         left:50%;background-color: var(--primary-color);color: var(--white);font-weight: 700;} 
+
+/* cafe opening hours */
+.open-time{
+    width: 80%;
+}
+.open{
+    width: 5rem;
+    padding-left: 10px;
+
+}
+.open-time p{
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    color: var(--text-color);
+    font-family: var(--font);
+    font-weight: 700;
+    justify-content:space-evenly;
+    align-items: center;
+
+}
+/* Special Programs section*/
+.specials p{
+    color: var(--text-color);
+    font-family: var(--font);
+    line-height: 1.6;
+  
+}
+.specials{
+    width: 100%; 
+    padding: 10px;
+}
+
+.special-day p{
+    padding: 10px;
+    color: var(--text-color);
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+}
+.special-day{
+    width: 50%;
+    height: 60%;
+    margin: 5% 5%;
+    
+}
+.sec2{
+    margin-bottom: 20px;
+}
+.sec2 h2{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.footer-logo{
+    width: 4rem;
+    padding: .5rem;
+}
+
+.footer p{
+    color: var(--white);
+}
+.find-us{
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 35%;  
+}
+.socials img{
+    width: 3rem;
+    padding: .5rem;
+}
+
+
+/* About page properties */
+.btc{
+    background-color: var(--white);
+    width:100%;
+    line-height:1.6;
+    padding-bottom: 3rem;
+}
+.btc p{
+    color: var(--text-color);
+    font-family: var(--font);
+    line-height: 1.6;
+    padding-top: 1rem;
+    padding-bottom: .5rem;
+    text-align:left;
+    font-weight: 400;
+    font-size: 20px;
+}
+.split-class{
+    width:90%;
+    padding: 1rem 1rem;
+}
+.btc h1{
+    padding-bottom:1rem;
+    color: var(--text-color);
+    font-family: var(--font);
+    line-height: 1.6;
+    font-weight: 400;    
+    text-align:left;
+    font-size: 35px;
+}
+.btc img{
+    width: 35rem;
+    justify-content: right;
+    align-self:flex-end;
+    padding: 0rem 2rem;
+}
+
+/* Contact page properties */
+.contact h1{
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+    font-size: 45px;
+}
+.contact{    
+    background-color:var(--background-color);
+    padding:1rem 1rem;
+    line-height: 1.6;
+    width: 100%;
+}
+.details1 p{
+    text-align:left;
+    padding-bottom:.1rem;
+    font-size: 20px;
+}
+
+.details2 p{
+    text-align:left;
+    padding-top: .5rem;
+    font-size: 20px;
+    
+}
+.contact img{
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    width: 100%;
+}
+
+/* Form data of the contact page */
+.form{
+    width:100%;
+    background-color:var(--background-color);
+    padding: 1rem 1rem; 
+}
+.form h1{
+    text-align: center;
+}
+label{
+    display: block;
+    font-size: 18px;   
+    border:none;
+    margin: 1rem 1rem;
+}
+input{
+    display: block;
+    background-color:var(--secondary-color);
+    font-size: 18px;   
+    border:none;
+    margin: 0rem 1rem;
+    width:60%;
+    padding: 10px;
+    color: var(--white);    
+    
+}
+#message{
+    background-color:var(--secondary-color);
+    font-size: 18px;
+    color: var(--white);
+    margin: 1rem 1rem;
+    width:60%;
+    padding: 10px;
+
+} 
+#submitform{
+    background-color:var(--primary-color);
+    font-size: 16px;
+    height: 4rem;
+    color: var(--white);
+    padding: 1rem 1rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal{
+    position: fixed;
+    background-color: var(--white);
+    align-items: center;
+    width: 55vw;
+    height: 60vh;
+    justify-content: center;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    border-radius: 10px;    
+    overflow: scroll;
+    pointer-events: all;  
+
+}
+
+.modal img{
+    width: 8rem;
+    padding: .2rem .2rem;
+    margin: .1rem .1rem;   
+}
+#submitmodal{
+    color: var(--white);
+    border-radius:10px;
+    padding: 10px;
+    
+}
+
+.hidden{
+     display: none; 
+}
+
+#body.modal-active{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+}
+.overlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(167, 163, 163, 0.3);
+    position: fixed;
+}
+
+/* properties change when the screen size decreases */
+@media screen and (max-width: 1080px) {
+     p {
+      font-size: 0.875rem;
+    }  
+    .likes {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .likes-list {
+      margin-bottom: 25px;
+      width: 60%;
+      padding: 5px;
+    }
+    .find-us{      
+        width: 100%;  
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin: 10% 10%;
+    }
+    #more{width:100%; height:1000px;}
+    button{
+        height:50px; position:relative; margin: 40px 1px -1px -70px; width:150px; top:50%;
+         left:50%;background-color: var(--primary-color);color: var(--white);font-weight: 700;
+        } 
+    
+    .btc{
+        flex-direction: column;
+        width:100%
+    }
+    .split-class{
+        width:100%;
+        height: 100%;
+    }
+    .btc img{
+        width: 100%;
+        justify-content: right;
+        align-self:flex-end;
+        padding: 1rem 1rem;
+    }   
+  
+@media screen and (max-width: 500px) 
+{
+    .nav-items p{ 
+            display:block;            
+            align-items: center;
+            justify-content: center;
+    }
+    .header-logo{
+        width: 8rem;    
+    }
+    .main-header-logo{
+        width: 12rem;
+    }
+    .main-image h1{
+        font-size: 14px;
+    }
+    .likes-list {
+      width: 100%;
+    }
+    .find-us{        
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 1rem; 
+    }
+    .header-logo{
+        display: none;
+    }
+    .btc{
+        flex-direction: column;
+    }
+    .split-class{
+        width:100%;
+        height: 100%;
+    }
+    .btc h1{
+        font-size: 25px;
+    }
+    .btc p{
+        font-size: 14px;
+    }
+    .btc img{
+        width: 100%;
+        height: 90%; 
+        justify-content: right;
+        align-self:flex-end;
+        padding: 1rem 1rem;
+    }
+    .contact{    
+        padding:1rem 1rem;
+        line-height: 1.6;
+        width: 100%;        
+    }
+    .contact h1{
+        font-size: 30px;
+    }
+    .details1 p{
+        text-align:left;
+        padding-bottom:.1rem;
+        font-size: 14px;
+    }
+    .details2 p{
+        text-align:left;
+        padding-top: .5rem;
+        font-size: 14px;
+    }
+    .contact img{
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+        width: 100%;
+        /* width: 50%; */
+
+    }  
+    .socials img{
+        width: 2rem;
+        padding: .3rem;
+    }
+    
+    .footer-logo{
+        width: 3rem;
+        padding: .5rem;
+    }
+    .footer p{
+        font-size: 12px;
+    }
+    }
+}

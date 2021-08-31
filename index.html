@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr Coffee's Index Page</title>
+  <link rel="stylesheet" href="/application.css">
+</head>
+<body class = "flex column space-between">
+  <header>
+    <div class = "nav-items flex space-between">
+      <img class = "header-logo" src = "assets/full_logo_white.png" 
+      alt="Mr Coffee's logo, a flat, black, man wearing a hat on top.">
+      <nav>
+        <p><a href = "/">Accueil</a></p>
+        <p><a href = "/about.html">Qui&nbsp;sommes&#8209;nous</a></p>
+        <p><a href = "/contact.html">Nous&nbsp;contracter</a></p>
+      </nav>
+    </div>
+      <div>      
+      <img class = "main-header-logo flex" src="/assets/logo_mrcoffee.png" 
+      alt= "Mr Coffee's logo with a flat, black, man wearing a black hat on top.">
+    </div>    
+  </header>
+  <!-- Main part of the page -->
+  <main>
+    <div class="main-image">
+      <h1>DÉCOUVREZ NOTRE CAFÉ PHILO</h1>
+      <img src="/assets/mr_coffee_salle.jpg"
+        alt="Mr Coffee's refreshing and busy cafe.">
+    </div>
+
+    <!-- Section is used to place all the related distinct content together with heading or sometimes without -->
+    <section>
+      <h2 >Chez Mr.Coffee, nous aimons trois choses</h2>
+      
+      <!-- Flex with space between the 3 containers with different likes-->
+        <div id = "more" class="likes flex space-between">
+          <div class="likes-list">
+            <img src="/assets/icon_café.png" alt="Good Coffee">
+            <h3>Le bon café</h3>
+            <p>
+              Nos priorités : la qualité et le goût. Tous nos cafés sont
+              soigneusements séléctionnés en accord avec nos valeurs de respect
+              de la nature et des hommes.
+            </p>
+          </div>
+
+          <div class="likes-list">
+            <img src="/assets/icon_gens.png" alt="People">
+            <h3>Les gens</h3>
+            <p>
+              Nous sommes de ceux qui pensent qu'ensemble, nous allons plus
+              loin. C'est pourquoi chez Mr.Coffee, notre mission est de
+              rassembler les gens en leur offrant un lieu de liberté et de
+              partages.
+            </p>
+          </div>
+
+          <div class="likes-list">
+            <img src="/assets/icon_histoires.png" alt="The Stories">
+            <h3>Les histoires</h3>
+            <p>
+              Chez Mr.Coffee, que vous soyez poête, fantasque ou philosophe,
+              nous vous offrons un lieu pour parler de vos histoires, ou pour
+              les écrire.
+            </p>
+          </div>
+        </div>
+        <button type = "button">En savoir plus</button>
+    </section>
+    <!-- Another section for the promotions content -->
+        <section> 
+          <div  class = "sec2">
+            <h2>Découvrez notre progamme</h2>
+            <div class = "open-time flex">
+              <img class="open" src="/assets/icon_open.png" alt="Mr. Coffee's Open logo">
+              <p>Votre café vous accueille 7j/7:</p>
+            </div>
+          <div class="specials flex space-between" >
+            <div class = "special-day flex column">
+              <p>Tous les mardis,
+                retrouvez <strong> cafés poésies :</strong></p>
+              <p><strong>Venez écouter ou lire vos plus beaux
+                poèmes : Mr.Coffee offre une
+                consommation à tous les courageux !</strong></p>
+            </div>
+            <div class = "special-day flex column space-between">
+              <p>Tous les jeudis,
+                retrouvez les <strong>cafés philo et débat :</strong></p>
+              <p><strong>Autour d’un thème philosophique ou de
+                société, venez débattre entre experts ou
+                simple curieux.</strong></p>
+            </div>
+          </div>
+          </div>
+          <p>Sans oublier nos ateliers d’écritures et évènements excéptionnels !</p>
+          <h2>Rendez-vous sur notre page Contact pour retrouver
+            toutes les infos pratiques</h2>
+        </section>       
+  </main>
+  <!-- footer data with logo and social media links -->
+  <footer class = "footer flex">
+    <img class="footer-logo" src="/assets/logo_blanc.png" alt="Mr Coffee logo, a flat, white, man wearing a hat on top.">
+    <div class = "find-us flex">
+      <p>Suivez nous sur les réseaux sociaux&nbsp;!</p>
+      <!-- class for social media links and logos when clicked on links gets opened in a new window due to the target -->
+        <div class="socials">
+        <a href="https://www.linkedin.com/" target="_blank"> 
+          <img src="/assets/logo_linkedin.png" alt="LinkedIn white logo"></a>
+        <a href="https://www.twitter.com/" target="_blank">
+          <img src="/assets/logo_twitter.png" alt="Twitter white logo"></a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="/assets/logo_facebook.png" alt="Facebook white logo"></a>
+       </div>
+    </div>
+  </footer>
+</body>
+</html>
