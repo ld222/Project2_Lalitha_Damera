@@ -9,11 +9,11 @@
   <link rel="stylesheet" href="/application.css">
 </head>
 <!-- <body class = "flex column space-between"> -->
-  <body>
+  <body >
 
-  <div class="hidden overlay"></div>
+  <div class="overlay hidden" id = "overlay"></div>
   <!-- Modal window -->
-  <div class = "hidden modal">
+  <div class = "modal hidden" id = "modal">
     <!-- Modal logo -->
     <div>
       <img src="/assets/logo_mrcoffee.png" 
@@ -70,7 +70,7 @@
           <textarea class="inputs" id="message" name="message" rows="5" 
            placeholder="tapez votre message ici" required ></textarea>       
         <div>    
-          <button id="submitform" type="submit">nous faire parvenir</button>
+          <button id ="submitform" type="submit" class = "buttonoverlay">nous faire parvenir</button>
         </div>      
       </form>    
   </div>
